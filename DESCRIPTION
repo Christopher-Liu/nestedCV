@@ -1,11 +1,17 @@
 Package: nestedCV
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Nested Cross Validation
 Version: 0.1.0
-Author: Who wrote it
+Author: Christopher Liu
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Description: Runs a nested cross validation procedure given a specified model,
+    the number of outer and inner cross validation folds, and data. Nested
+    cross validation works as a resampling method that can do simultaneous 
+    model building and performance assessment
+Imports: doParallel,
+         kernlab,
+         LiblineaR,
+         randomForest
+License: MIT License
 Encoding: UTF-8
 LazyData: true
